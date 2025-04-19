@@ -1,25 +1,44 @@
 <div class="home-container">
   <header class="hero">
-    <h1>Welcome to Our Surgical Oncology Practice</h1>
-    <p>Your health is our priority. We specialize in providing comprehensive care for cancer patients.</p>
-    <a href="/contact" class="btn-primary">Schedule a Consultation</a>
+    <div class="hero-content">
+      <h1>{{title}}</h1>
+      <p>{{description}}</p>
+      <a routerLink="/contact" class="btn-primary">Schedule a Consultation</a>
+    </div>
   </header>
 
   <section class="services-overview">
-    <h2>Our Services</h2>
-    <p>We offer a range of surgical oncology services tailored to meet your needs.</p>
-    <a href="/services" class="btn-secondary">Learn More</a>
+    <div class="section-content">
+      <h2>Our Services</h2>
+      <div class="services-grid">
+        <div class="service-card" *ngFor="let service of services">
+          <img [src]="service.icon" [alt]="service.name">
+          <h3>{{service.name}}</h3>
+          <p>{{service.description}}</p>
+        </div>
+      </div>
+      <a routerLink="/services" class="btn-secondary">View All Services</a>
+    </div>
   </section>
 
   <section class="about-us">
-    <h2>About Us</h2>
-    <p>Our team of experienced surgical oncologists is dedicated to providing the highest quality of care.</p>
-    <a href="/about" class="btn-secondary">Meet Our Team</a>
+    <div class="section-content">
+      <h2>Expert Care You Can Trust</h2>
+      <p>{{aboutDescription}}</p>
+      <a routerLink="/about" class="btn-secondary">Meet Our Team</a>
+    </div>
   </section>
 
   <section class="patient-resources">
-    <h2>Patient Resources</h2>
-    <p>Access important information and resources to help you navigate your treatment journey.</p>
-    <a href="/resources" class="btn-secondary">Explore Resources</a>
+    <div class="section-content">
+      <h2>Patient Resources</h2>
+      <div class="resources-grid">
+        <div class="resource-card" *ngFor="let resource of patientResources">
+          <h3>{{resource.title}}</h3>
+          <p>{{resource.description}}</p>
+          <a [routerLink]="resource.link">Learn More</a>
+        </div>
+      </div>
+    </div>
   </section>
 </div>

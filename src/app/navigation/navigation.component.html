@@ -1,11 +1,12 @@
-<nav>
-  <ul class="navigation-menu">
-    <li><a routerLink="/" routerLinkActive="active">Home</a></li>
-    <li><a routerLink="/about" routerLinkActive="active">About</a></li>
-    <li><a routerLink="/services" routerLinkActive="active">Services</a></li>
-    <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
-  </ul>
-  <div class="call-to-action">
-    <a routerLink="/contact" class="btn btn-primary">Schedule a Consultation</a>
+<nav class="navigation">
+  <div class="logo">
+    <a routerLink="/">Dr. Smith | Surgical Oncology</a>
   </div>
+  <div class="nav-links">
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-link">Home</a>
+    <a routerLink="/about" routerLinkActive="active" class="nav-link">About</a>
+    <a routerLink="/services" routerLinkActive="active" class="nav-link">Services</a>
+    <a routerLink="/contact" routerLinkActive="active" class="nav-link">Contact</a>
+  </div>
+  <a routerLink="/contact" class="call-to-action">Schedule Consultation</a>
 </nav>

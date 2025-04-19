@@ -3,46 +3,90 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #004d40; /* Dark teal background */
+  background-color: #004d40;
   color: white;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .nav-links {
   display: flex;
   gap: 2rem;
+  align-items: center;
 }
 
 .nav-link {
   color: white;
   text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
 
-.nav-link:hover {
-  color: #ffab00; /* Gold color on hover */
+  &:hover {
+    color: #ffab00;
+    background-color: rgba(255,255,255,0.1);
+  }
+
+  &.active {
+    color: #ffab00;
+    background-color: rgba(255,255,255,0.1);
+  }
 }
 
 .call-to-action {
-  background-color: #ffab00; /* Gold background */
-  color: #004d40; /* Dark teal text */
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
+  background-color: #ffab00;
+  color: #004d40;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
   text-decoration: none;
   font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.call-to-action:hover {
-  background-color: #e68a00; /* Darker gold on hover */
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background-color: #e68a00;
+    transform: translateY(-2px);
+  }
 }
 
 @media (max-width: 768px) {
+  .navigation {
+    padding: 1rem;
+  }
+
+  .logo a {
+    font-size: 1.2rem;
+  }
+
   .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
     flex-direction: column;
-    align-items: flex-start;
+    background-color: #004d40;
+    padding: 1rem;
     gap: 1rem;
+
+    &.open {
+      display: flex;
+    }
+  }
+
+  .call-to-action {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
   }
 }

@@ -5,23 +5,14 @@ import { Component } from '@angular/core';
   templateUrl: './navigation.component.html',
   styleUrls: ['./navigation.component.scss']
 })
-
 export class NavigationComponent {
-  constructor() {}
+  isMenuOpen = false;
 
-  navigateToHome() {
-    // Logic for navigating to the home page
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
   }
 
-  navigateToAbout() {
-    // Logic for navigating to the about page
-  }
-
-  navigateToServices() {
-    // Logic for navigating to the services page
-  }
-
-  navigateToContact() {
-    // Logic for navigating to the contact page
+  closeMenu() {
+    this.isMenuOpen = false;
   }
 }
