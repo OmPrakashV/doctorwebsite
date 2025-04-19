@@ -1,59 +1,101 @@
-# MyApp
+# Surgical Oncology Website
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.8.
+This is a responsive and professional website for a surgical oncologist. The website includes clear navigation, prominent call-to-actions, and essential information about the services offered.
 
-## Development server
+## Project Structure
 
-To start a local development server, run:
+The project is structured as follows:
 
-```bash
-ng serve
+```
+surgical-oncology-website
+├── angular.json
+├── package.json
+├── tsconfig.json
+├── README.md
+├── src
+│   ├── app
+│   │   ├── app.component.ts
+│   │   ├── app.component.html
+│   │   ├── app.component.scss
+│   │   ├── app.module.ts
+│   │   ├── home
+│   │   │   ├── home.component.ts
+│   │   │   ├── home.component.html
+│   │   │   └── home.component.scss
+│   │   ├── about
+│   │   │   ├── about.component.ts
+│   │   │   ├── about.component.html
+│   │   │   └── about.component.scss
+│   │   ├── services
+│   │   │   ├── services.component.ts
+│   │   │   ├── services.component.html
+│   │   │   └── services.component.scss
+│   │   ├── contact
+│   │   │   ├── contact.component.ts
+│   │   │   ├── contact.component.html
+│   │   │   └── contact.component.scss
+│   │   ├── navigation
+│   │   │   ├── navigation.component.ts
+│   │   │   ├── navigation.component.html
+│   │   │   └── navigation.component.scss
+│   │   └── footer
+│   │       ├── footer.component.ts
+│   │       ├── footer.component.html
+│   │       └── footer.component.scss
+│   ├── assets
+│   │   └── styles
+│   │       ├── _variables.scss
+│   │       ├── _mixins.scss
+│   │       └── global.scss
+│   ├── environments
+│   │   ├── environment.ts
+│   │   └── environment.prod.ts
+│   ├── index.html
+│   └── styles.scss
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Getting Started
 
-## Code scaffolding
+To set up the project locally, follow these steps:
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+1. **Clone the repository:**
+   ```
+   git clone <repository-url>
+   cd surgical-oncology-website
+   ```
 
-```bash
-ng generate component component-name
-```
+2. **Install dependencies:**
+   ```
+   npm install
+   ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+3. **Run the application:**
+   ```
+   ng serve
+   ```
 
-```bash
-ng generate --help
-```
+4. **Open your browser and navigate to:**
+   ```
+   http://localhost:4200
+   ```
 
-## Building
+## Features
 
-To build the project run:
+- **Responsive Design:** The website is designed to be fully responsive, ensuring a seamless experience on all devices.
+- **Clear Navigation:** Easy-to-use navigation bar to access different sections of the website.
+- **Call-to-Actions:** Prominent buttons and links to encourage users to contact or learn more about services.
+- **Information Sections:** Detailed pages for Home, About, Services, and Contact.
 
-```bash
-ng build
-```
+## Technologies Used
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+- Angular
+- SCSS
+- TypeScript
 
-## Running unit tests
+## Contributing
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Contributions are welcome! Please feel free to submit a pull request or open an issue for any suggestions or improvements.
 
-```bash
-ng test
-```
+## License
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+This project is licensed under the MIT License. See the LICENSE file for more details.
