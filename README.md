@@ -7,7 +7,7 @@ This is a responsive and professional website for a surgical oncologist. The web
 The project is structured as follows:
 
 ```
-surgical-oncology-website
+doctorwebsite
 ├── angular.json
 ├── package.json
 ├── tsconfig.json
