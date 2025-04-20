@@ -1,0 +1,33 @@
+@import 'variables';
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin responsive-font($size) {
+  font-size: $size;
+
+  @media (max-width: 768px) {
+    font-size: $size * 0.9;
+  }
+
+  @media (max-width: 480px) {
+    font-size: $size * 0.8;
+  }
+}
+
+@mixin button-style($bg-color, $text-color) {
+  background-color: $bg-color;
+  color: $text-color;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: darken($bg-color, 10%);
+  }
+}
