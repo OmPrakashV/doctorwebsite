@@ -5,13 +5,40 @@ import { Component } from '@angular/core';
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.scss']
 })
-
 export class AboutComponent {
-  title: string;
-  description: string;
+  doctorInfo = {
+    name: 'Dr. Jane Smith',
+    title: 'MD, FACS',
+    experience: '15',
+    specializations: [
+      'Minimally Invasive Surgery',
+      'Robotic Surgery',
+      'Gastrointestinal Cancer',
+      'Breast Cancer'
+    ]
+  };
 
-  constructor() {
-    this.title = 'About Our Surgical Oncology Practice';
-    this.description = 'We are dedicated to providing the highest quality care for patients with cancer. Our team of experienced surgical oncologists utilizes the latest techniques and technologies to ensure the best outcomes for our patients.';
-  }
+  clinicInfo = {
+    name: 'Advanced Surgical Oncology Center',
+    location: 'Metropolitan Medical Center',
+    established: '2005'
+  };
+
+  teamMembers = [
+    {
+      name: 'Dr. Jane Smith',
+      role: 'Lead Surgical Oncologist',
+      description: 'Board-certified with over 15 years of experience'
+    },
+    {
+      name: 'Sarah Johnson',
+      role: 'Nurse Practitioner',
+      description: 'Specialized in oncology patient care'
+    },
+    {
+      name: 'Dr. Michael Chen',
+      role: 'Associate Surgeon',
+      description: 'Fellowship-trained in minimally invasive techniques'
+    }
+  ];
 }
