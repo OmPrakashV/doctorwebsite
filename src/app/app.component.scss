@@ -2,13 +2,13 @@ body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #FAFAFA;
 }
 
 header {
-  background-color: #007bff;
-  color: white;
-  padding: 20px 0;
+  background-color: #004D40;
+  color: #FAFAFA;
+  padding: 10px 0;
   text-align: center;
 }
 
@@ -22,30 +22,40 @@ nav {
 }
 
 nav a {
-  color: white;
+  color: #FAFAFA;
   text-decoration: none;
+  padding: 10px 15px;
   margin: 0 15px;
   font-weight: bold;
+  transition: background 0.3s;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  background: #32CD32;
+  text-decoration: none;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  overflow: hidden;
 }
 
 footer {
-  background-color: #333;
-  color: white;
+  background-color: #004D40;
+  color: #FAFAFA;
   text-align: center;
   padding: 10px 0;
   position: relative;
   bottom: 0;
   width: 100%;
+}
+
+// Adding the highlight class from styles.scss
+.highlight {
+  background-color: #FFDAB9;
+  color: #004D40;
 }
 
 @media (max-width: 768px) {
@@ -54,6 +64,7 @@ footer {
   }
 
   nav a {
-    margin: 0 10px;
+    display: block;
+    margin: 5px 0;
   }
 }
