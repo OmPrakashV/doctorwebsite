@@ -61,7 +61,7 @@ To set up the project locally, follow these steps:
 1. **Clone the repository:**
    ```
    git clone <repository-url>
-   cd surgical-oncology-website
+   cd doctorwebsite
    ```
 
 2. **Install dependencies:**
