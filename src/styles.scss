@@ -3,12 +3,12 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #FAFAFA; // Updated to Off-White
 }
 
 header {
-  background: #007bff;
-  color: #fff;
+  background: #004D40; // Updated to Deep Teal
+  color: #FAFAFA; // Updated to Off-White
   padding: 10px 0;
   text-align: center;
 }
@@ -18,14 +18,14 @@ nav {
 }
 
 nav a {
-  color: #fff;
+  color: #FAFAFA; // Updated to Off-White
   text-decoration: none;
   padding: 10px 15px;
   transition: background 0.3s;
 }
 
 nav a:hover {
-  background: #0056b3;
+  background: #32CD32; // Updated to Bright Lime Green
 }
 
 .container {
@@ -35,8 +35,8 @@ nav a:hover {
 }
 
 footer {
-  background: #333;
-  color: #fff;
+  background: #004D40; // Updated to Deep Teal
+  color: #FAFAFA; // Updated to Off-White
   text-align: center;
   padding: 10px 0;
   position: relative;
@@ -47,8 +47,8 @@ footer {
 .btn {
   display: inline-block;
   font-size: 18px;
-  color: #fff;
-  background: #28a745;
+  color: #FAFAFA; // Updated to Off-White
+  background: #32CD32; // Updated to Bright Lime Green
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -58,7 +58,13 @@ footer {
 }
 
 .btn:hover {
-  background: #218838;
+  background: #004D40; // Updated to Deep Teal
+}
+
+// Adding a new highlight class for elements that need the Warm Peach color
+.highlight {
+  background-color: #FFDAB9; // Warm Peach
+  color: #004D40; // Deep Teal for contrast
 }
 
 @media (max-width: 768px) {

@@ -2,6 +2,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px 20px;
+  background-color: #FAFAFA;
 }
 
 .hero-section {
@@ -10,13 +11,14 @@
   
   h1 {
     font-size: 2.8em;
-    color: #2c3e50;
+    color: #004D40;
     margin-bottom: 10px;
   }
   
   .lead {
     font-size: 1.4em;
-    color: #7f8c8d;
+    color: #004D40;
+    opacity: 0.8;
   }
 }
 
@@ -32,10 +34,11 @@ section {
   gap: 20px;
   
   li {
-    background: #f8f9fa;
+    background: #FAFAFA;
     padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border: 1px solid #004D40;
   }
 }
 
@@ -46,18 +49,18 @@ section {
 }
 
 .team-member {
-  background: #ffffff;
+  background: #FAFAFA;
   padding: 25px;
   border-radius: 10px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.1);
   
   h3 {
-    color: #2c3e50;
+    color: #004D40;
     margin-bottom: 10px;
   }
   
   .role {
-    color: #3498db;
+    color: #32CD32;
     font-weight: 500;
     margin-bottom: 15px;
   }
@@ -65,22 +68,22 @@ section {
 
 .cta-section {
   text-align: center;
-  background: #f8f9fa;
+  background: #FFDAB9;
   padding: 40px;
   border-radius: 12px;
   
   .call-to-action {
     display: inline-block;
     padding: 15px 30px;
-    background: #3498db;
-    color: white;
+    background: #32CD32;
+    color: #FAFAFA;
     text-decoration: none;
-    border-radius: 25px;
+    border-radius: 5px;
     font-weight: 500;
-    transition: all 0.3s ease;
+    transition: background 0.3s ease;
     
     &:hover {
-      background: #2980b9;
+      background: #004D40;
       transform: translateY(-2px);
     }
   }
